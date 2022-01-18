@@ -1,0 +1,602 @@
+
+/*글로벌 선택자*/
+
+
+.Navbar {
+    font-family: apple-system, Helvetica,Arial,'Apple SD Gothic Neo','Nanum Gothic','Malgun Gothic' sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #f8f8fa;
+
+}
+
+html {
+    font-size: 10px;
+}
+html {
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+}
+
+
+
+
+
+
+ul {
+display: block;
+list-style-type: disc;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+a {
+background-color: transparent;
+}
+
+* {
+box-sizing: border-box;
+}
+ul, ol {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+img {
+vertical-align: middle;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+a {
+color: #444444;
+text-decoration: none;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+margin: 0;
+padding: 0;
+border: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+display: block;
+}
+ol,ul {
+list-style-type: none;
+}
+
+
+
+
+
+
+
+
+img {
+border: 0;
+}
+
+
+/*태그 선택자*/
+
+/*클래스 선택자*/
+
+
+/*navBar*/
+.navBar{
+width: 100%;
+background-color: #fff;
+box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+padding-right: initial;
+z-index: 100;
+
+}
+
+
+/*mainBar*/
+.mainBar {
+position: relative;
+max-width: 1060px;
+height: 50px;
+}
+
+@media (min-width: 1200px){
+.mainBar {
+    width: 87.72%;
+}}
+@media (min-width: 1200px){
+.mainBar {
+    margin: 0 auto;
+    height: 50px;
+}}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.mainBar {
+    width: 90%;
+}}
+@media (min-width: 992px) and (max-width: 1199px){
+.mainBar {
+    margin: 0 auto;
+    height: 50px;
+}}
+@media (min-width: 768px) and (max-width: 991px){
+.mainBar {
+    width: 90%;
+}}
+@media (min-width: 768px) and (max-width: 991px){
+.mainBar {
+    margin: 0 auto;
+    height: 50px;
+}}
+@media (min-width: 768px) and (max-width: 991px){
+.mainBar {
+    height: 110px;
+}}
+
+@media (max-width: 767px){
+.mainBar {
+    height: 110px;  
+    }
+}
+
+
+.mainBarNav  { 
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+.mainBarNav, .mainBarNavTop { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*왼쪽 mainBarNavTop*/
+@media (max-width: 767px){
+.mainBarNavTop {
+    height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.mainBarNavTop {
+    height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+}}
+@media (min-width: 768px) and (max-width: 991px){
+.mainBarNavTop {
+    padding: 15px 0;
+}}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+.mainBarNavTop button {
+    display: inline-block;
+}}
+
+
+/*mainBarNavTopLogo*/
+
+
+a {
+text-decoration: inherit;
+cursor: pointer;
+}
+a, a:active, a:hover, a:visited {
+color: inherit;
+}
+
+
+.mainBarNavTopLogo{
+display: flex;
+}
+
+
+/*xsSignUpButton*/
+.mainBarNavTop>button {
+display: none;
+color: #36f;
+font-size: 14px;
+line-height: 32px;
+height: 34px;
+border: 1px solid #36f;
+border-radius: 17px;
+padding: 0 14px;
+}
+
+
+@media (max-width: 767px){
+.mainBarNavTop button[id=gnbSignupBtn] {
+    display: inline-block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.mainBarNavTop button[id=gnbSignupBtn] {
+    display: inline-block;
+}
+}
+
+
+/*mainBarHanburger*/
+.mainBarHamburger, .mainBarNavTop {
+margin-top: -2px;
+margin-right: 15px;
+}
+
+/*mainBarLogo*/
+.mainBarLogo{
+display: block;
+}
+
+/*WANTED 로고*/
+.mainBarLogo > i {
+font-size: 17px;
+}
+
+/*로고 구현 필요*/
+
+.icon-logo_new {
+/* font-family: 'icomoon' !important; */
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+}
+
+@media (max-width: 767px){
+.xsSignUpButton {
+    display: none;
+}
+}
+
+
+
+
+/*가운데 ul*/
+
+
+/*홈 빼고 공통*/
+.menu{
+height: inherit;
+text-align: center;
+margin: 0;
+}
+
+@media (max-width: 767px){
+    .menu .options {
+        display: none;
+    }
+    }
+@media (min-width: 768px) and (max-width: 991px){
+    .xsOnly {
+    display: none;
+}}
+@media (min-width: 992px) and (max-width: 1199px){
+    .menu .xsOnly {
+        display: none;
+    }}
+
+
+@media (min-width: 992px) and (max-width: 1100px){
+.menu {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
+}
+}
+
+
+
+
+/*홈버튼*/
+.menu li {
+height: inherit;
+display: inline-block;
+}
+.menu .selectedNav {
+box-shadow: inset 0 -2px #258bf7;
+}
+@media (min-width: 1200px){
+.menu .xsOnly {
+    display: none;
+}}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.menu .xsOnly {
+    display: none;
+}}
+
+@media (min-width: 768px) and (max-width: 991px){
+.menu .xsOnly {
+    display: none;
+}}
+
+
+/*홈버튼 아래 a링크*/
+.menu li a {
+position: relative;
+vertical-align: middle;
+font-size: 14px;
+line-height: 20px;
+font-weight: 600;
+padding: 15px;
+display: inline-block;
+}
+
+@media (min-width: 992px) and (max-width: 1100px){
+.menu li a {
+    font-size: 13px;
+}}
+@media (min-width: 992px) and (max-width: 1100px){
+.menu li a {
+    padding: 15px 0;
+}}
+
+@media (min-width: 768px) and (max-width: 991px){
+.menu li a {
+    padding: 11px 10px 19px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.menu li a {
+    font-size: 13px;
+}}
+
+@media (max-width: 767px){
+.menu li a {
+    padding: 11px 10px 19px;
+}
+}
+
+@media (max-width: 320px) {
+.menu li a {
+    font-size: 13px;
+    padding: 15px 8px;
+}
+}
+.menu li.xsHomeButton a {
+padding-left: 20px;
+}
+
+@media (max-width: 320px){
+.menu li.xsHomeButton a {
+    padding: 15px 8px 15px 20px;
+}}
+
+@media (min-width: 768px) and (max-width: 991px){
+.menu {
+    justify-content: flex-start;
+    margin-right: 30px;
+}}
+
+
+/*오른쪽 aside*/
+
+.aside{
+height: 100%;
+    padding: 10px 0;
+}
+
+@media (max-width: 767px){
+.aside {
+    padding: 14px 0;
+}}
+
+.aside > ul {
+height: 100%;
+margin: 0;
+}
+
+@media (max-width: 767px){
+.aside>ul {
+    margin-top: -5px;
+}
+}
+
+/*검색 버튼*/
+
+.aside>ul li .searchButton {
+position: relative;
+margin-top: 5px;
+}
+.aside>ul li>* {
+height: 100%;
+padding: 0 5px;
+font-size: 14px;
+color: #333;
+font-weight: 600;
+line-height: 1;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.aside>ul li .searchButton {
+    margin: 0;
+}
+}
+
+
+@media (max-width: 767px){.aside>ul li .searchButton {
+margin: 0;
+}}
+
+.searchBarsearchIcon{
+overflow: hidden;
+}
+
+@media (max-width: 767px){
+.aside>ul .forEmployers{
+    display: none;
+}
+}
+
+.searchBarsearchIcon{
+width: 18px;
+height:18px;
+}
+
+
+
+
+/*회원 가입 버큰*/
+
+.aside>ul li .signUpButton {
+    margin-right: 6px;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .aside>ul li .signUpButton {
+    display: none;
+}
+}
+
+@media (max-width: 767px) {
+    .aside>ul li .signUpButton {
+    display: none;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .aside>ul li .signUpButton {
+    margin-right: 0;
+    padding: 0 3px;
+}
+}
+
+
+
+/*기업 서비스 li*/
+.aside>ul li {
+position: relative;
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+}
+.aside>ul .leftDivision {
+display: inline-flex;
+}
+
+@media (max-width: 767px) {
+.aside>ul .forEmployers, .aside>ul .options {
+    display: none;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.aside>ul .forEmployers {
+    display: none;
+}
+}
+
+
+/*기업 서비스 버튼*/
+
+
+.aside>ul li a {
+display: inline-block;
+vertical-align: bottom;
+line-height: 32px;
+}
+.aside>ul li .dashboardButton {
+font-size: 13px;
+color: #666;
+line-height: 30px;
+height: 30px;
+border: 1px solid #e1e2e3;
+border-radius: 15px;
+padding: 0 10px;
+margin-left: 15px;
+font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+.aside>ul li>* {
+    padding: 0 10px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.aside>ul li>* {
+    padding: 0 10px;
+} 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.aside>ul li .dashboardButton {
+    margin: 0;
+}
+}
+
+@media (max-width: 767px) {
+.aside>ul li .dashboardButton {
+    margin: 0;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.aside>ul li .dashboardButton {
+    margin: 0;
+}
+}
+
+
+/*leftDivision*/
+.aside>ul .leftDivision:before {
+display: block;
+content: "";
+width: 1px;
+height: 10px;
+background-color: #e1e2e3;
+margin: auto 10px;
+}
+
+
+/*ellipse 버튼*/
+.ellipsesButton{
+width: 18px;
+height: 18px;
+}
+.ellipsesButton{
+overflow: hidden;
+}
+.aside>ul li .menuButton {
+margin-right: 10px;
+padding-left: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.aside>ul li .menuButton {
+    margin-right: 0;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+.AsideMenu {
+    display: none!important;
+}}
+
+@media (min-width: 1200px){
+.AsideMenu {
+    display: none!important;
+}
+}
+
+.ellipsesButton{
+    overflow: hidden;
+}
+
+
+.Padding{
+height: 110px;
+}
+
+
+/*작은 글씨용 
+.menu {
+box-shadow: inset 0 -2px #258bf7;
+} */

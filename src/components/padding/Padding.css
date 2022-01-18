@@ -1,0 +1,20 @@
+.Padding {
+    height: 50px;
+}
+@media (max-width: 767px) {
+    .Padding {
+        height: 110px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Padding {
+        height: 110px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Padding{
+        height: 110px;  
+    }
+}

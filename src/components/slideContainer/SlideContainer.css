@@ -1,0 +1,129 @@
+ @media (min-width: 1200px){
+  .Main {
+    padding-top: 25px;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}}
+
+
+
+@media (min-width: 1200px) {
+  .TopBanner {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+}
+
+.TopBanner {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.StyledSlider {
+  direction: ltr;
+  unicode-bidi: isolate;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+ @media (min-width: 1200px) {
+  .SlickList{ 
+    box-sizing: border-box;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0px 50px;
+  }
+}
+
+.SlickList{ 
+  box-sizing: border-box;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0px 40px;
+}
+  
+
+/* 수정 예정 */
+.SlickTrack {
+  opacity: 1;
+  width: 46827px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+/*화살표 공통*/
+.topBannerArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  width: 30px;
+  height: 60px;
+  opacity: .5;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 16px;
+}
+.arrowIconWrapper{
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.arrowIcon{
+  overflow: hidden;
+}
+
+.arrowIcon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  font-size: inherit;
+}
+
+/*오른쪽 화살표*/
+.nextArrowButton {
+  right: calc((100% - 1200px) / 2);
+}
+
+/*왼쪽 화살표*/
+
+.prevArrowButton{
+  left: calc((100% - 1210px) / 2);
+}
+

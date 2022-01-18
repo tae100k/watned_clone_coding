@@ -1,0 +1,228 @@
+
+.SlideDiv {
+  margin: 20px 10px;
+}
+
+@media (min-width: 1200px) { 
+  .SlideDiv{ 
+    padding: 0;
+    border: 0;
+    margin: 0;
+} 
+}
+
+.SlideContainer{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+
+.imageWrapper {
+  box-sizing: border-box;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+@media (max-width: 1199px) { 
+  .imageWrapper{
+    box-sizing: border-box;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: inherit;
+    cursor: pointer;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}}
+
+.image {
+  cursor: pointer;
+  color: inherit;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+
+.Divider {
+  display: none;
+}
+
+@media (min-width: 1200px) { 
+  .Divider{
+    user-select: none;
+    text-align: left;
+    box-sizing: content-box;
+    height: 1px;
+    margin: 0;
+    border: none;
+    flex-shrink: 0;
+    background-color: #ececec;
+    display: block;
+  }
+}
+
+/*infoWrapper아래 h2, h3*/
+.SlideContainer h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #333;
+  width: "auto";
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .SlideContainer h2 {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 20px;
+      line-height: 1.5;
+  }
+}
+
+
+.SlideContainer h3  {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #666;
+  width: "auto";
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+@media (min-width: 1200px) {
+  .SlideContainer h3 {
+      margin: 0 20px;
+      height: 44px;
+      font-size: 14px;
+      line-height: 1.64;
+      color: #333;
+  }
+}
+
+/*infoWrapper 아래 hr태그*/
+
+.infoDivider {
+  height: 1px;
+  margin: 0;
+  border: none;
+  flex-shrink: 0;
+  background-color: #ececec;
+}
+.infoDivider {
+  display: none;
+}
+@media (min-width: 1200px){
+  .infoDivider {
+      display: block;
+  }
+}
+
+/*info a태그*/
+
+.buttonRoot {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-width: 64px;
+  padding: 0 27px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.buttonText {
+  padding: 6px 8px;
+}
+.buttonPrimary {
+  color: #36f;
+}
+
+.buttonSizeMedium {
+  height: 40px;
+  font-size: 15px;
+}
+
+
+@media (min-width: 1200px) {
+  .informationDirectButton {
+      margin: 6px 0 0 13px;
+  }
+}
+
+.informationDirectButton {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #36f;
+}
+
+
+
+
+
+.slickSlidebuttonLabel{
+  width: 100%;
+  font-size: inherit;
+  font-weight: inherit;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  color: inherit;
+}
+.slickSlideMove{
+  margin-top: -2px;
+  margin-right: -1px;
+  margin-left: 2px;
+}
+
+
+.slickSlideMoveIconWrapper{
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.slickSlideMoveIcon{
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  font-size: inherit;
+}
+.slickSlideMoveIcon{
+  overflow: hidden;  
+}
