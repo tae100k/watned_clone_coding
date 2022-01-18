@@ -120,7 +120,7 @@ function Navbar() {
           <ul>
             <li>
               <button className="searchButton">
-              <svg
+                <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="searchBarsearchIcon"
                     viewBox="0 0 32 32"

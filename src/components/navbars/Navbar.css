@@ -436,6 +436,38 @@ overflow: hidden;
 }
 }
 
+
+
+.menu li a>span {
+    position: absolute;
+    top: 10px;
+    right: -7px;
+    pointer-events: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu li a>span {
+        right: -8px;
+        top: 4px;
+    }
+}
+
+
+.menu li a>em {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    pointer-events: none;
+    font-style: normal;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu li a>em {
+        top: 5px;
+        right: -7px;
+    }
+    
+}
+
 .searchBarsearchIcon{
 width: 18px;
 height:18px;
