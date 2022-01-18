@@ -123,7 +123,7 @@ function SlideList(props) {
   const rightList = centerList.slice(length / 2);
 
   const slideList = [...leftList, ...centerList, ...rightList];
-  const isFocused = (i) => {
+  const isCurrent = (i) => {
     const curIndex = Number(i) - Math.floor(length / 2) - 1;
     if (props.counter === length && curIndex === 0) {
       return true;
@@ -136,7 +136,7 @@ function SlideList(props) {
 
   return slideList.map((v, i) => (
     <Slide
-      focused={isFocused(i)}
+      isCurrent={isCurrent(i)}
       slidesize={props.slidesize}
       alt = {props.slides[v].title}
       img={props.slides[v].image}

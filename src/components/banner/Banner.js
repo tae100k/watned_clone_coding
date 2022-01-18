@@ -12,12 +12,12 @@ function Banner(props) {
     }}>
       <div className="SlideDiv">
         <div className="SlideContainer">
-          <ImageContainer focused={props.focused}>
+          <ImageContainer isCurrent={props.isCurrent}>
             <a className= "imageWrapper" href={props.href} onDragStart={(e) => e.preventDefault()}>
               <img className = "image" src={props.img} alt={props.alt} onDragStart={(e) => e.preventDefault()} />
             </a>
           </ImageContainer>
-          <Information focused={props.focused}>
+          <Information isCurrent={props.isCurrent}>
             <h2>{props.title}</h2>
             <h3>{props.description}</h3>
             <hr className = "infoDivider" />
