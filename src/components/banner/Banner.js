@@ -1,23 +1,23 @@
 import React from 'react';
 import "./Banner.css";
 
-import { StyledSlide,ImageContainer,Information } from './size';
+import { BannerWrapper,Slide,InformationWrapper } from './size';
 
 
 function Banner(props) {
   return (
-    <StyledSlide slidesize={props.slidesize} onDragStart={(e) => {
+    <BannerWrapper slidesize={props.slidesize} onDragStart={(e) => {
       e.stopPropagation();
       e.preventDefault();
     }}>
-      <div className="SlideDiv">
-        <div className="SlideContainer">
-          <ImageContainer isCurrent={props.isCurrent}>
+      <div className="slideDiv">
+        <div className="slideWrapper">
+          <Slide isCurrent={props.isCurrent}>
             <a className= "imageWrapper" href={props.href} onDragStart={(e) => e.preventDefault()}>
               <img className = "image" src={props.img} alt={props.alt} onDragStart={(e) => e.preventDefault()} />
             </a>
-          </ImageContainer>
-          <Information isCurrent={props.isCurrent}>
+          </Slide>
+          <InformationWrapper isCurrent={props.isCurrent}>
             <h2>{props.title}</h2>
             <h3>{props.description}</h3>
             <hr className = "infoDivider" />
@@ -29,10 +29,10 @@ function Banner(props) {
                 </svg>
               </span>
             </a>
-          </Information>
+          </InformationWrapper>
         </div>
       </div>
-    </StyledSlide>
+    </BannerWrapper>
   );
 }
 

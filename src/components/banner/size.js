@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 // 화면 사이즈에 동적으로 크기 변해야함.
-export const StyledSlide = styled.div`
+export const BannerWrapper = styled.div`
   @media (min-width: 1200px) {
     user-select: none;
     margin: 0;
@@ -28,7 +28,7 @@ export const StyledSlide = styled.div`
 `;
 
 
-export const ImageContainer = styled.div`
+export const Slide = styled.div`
   transition: filter 0.4s ease-in-out 0s;
   filter: ${(props) => (props.isCurrent ? 'brightness(100%)' : 'brightness(50%)')};
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -60,7 +60,7 @@ export const ImageContainer = styled.div`
 `;
 
 
-export const Information = styled.div`
+export const InformationWrapper = styled.div`
   @media (min-width: 1200px) {
     position: absolute;
     bottom: 28px;

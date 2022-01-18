@@ -1,11 +1,10 @@
 import React, {  useRef, useEffect, useCallback, useState } from 'react';
 import { throttle } from 'lodash';
 
-import Slide from "../banner/Banner"
+import Banner from "../banner/Banner"
 import "./SlideContainer.css"
 import slideItems from "../constants/slideItems";
 const length = slideItems.length;
-
 let slide_width = 1084;
 let slideStart = 6336.5;
 
@@ -90,10 +89,10 @@ function SlideContainer() {
   // SlideTrack, Slides에 임시로 windowSize 부여
   return (
     <div className = "Main">
-      <div className ="TopBanner">
-        <div className ="StyledSlider">
-          <div className ="SlickList">
-            <div className ="SlickTrack" ref={slideRef} slidesize={slidesize}>
+      <div className ="topBanner">
+        <div className ="slickListWrapper">
+          <div className ="slickList">
+            <div className ="slickTrack" ref={slideRef} slidesize={slidesize}>
               <SlideList slides={slideItems} counter={counter} slidesize={slidesize} />
             </div>
           </div>
@@ -135,7 +134,7 @@ function SlideList(props) {
   };
 
   return slideList.map((v, i) => (
-    <Slide
+    <Banner
       isCurrent={isCurrent(i)}
       slidesize={props.slidesize}
       alt = {props.slides[v].title}

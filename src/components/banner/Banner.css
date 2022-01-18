@@ -1,17 +1,17 @@
 
-.SlideDiv {
+.slideDiv {
   margin: 20px 10px;
 }
 
 @media (min-width: 1200px) { 
-  .SlideDiv{ 
+  .slideDiv{ 
     padding: 0;
     border: 0;
     margin: 0;
 } 
 }
 
-.SlideContainer{
+.slideWrapper{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -83,7 +83,7 @@
 }
 
 /*infoWrapper아래 h2, h3*/
-.SlideContainer h2 {
+.slideWrapper h2 {
   margin-top: 20px;
   font-size: 18px;
   line-height: 1;
@@ -95,7 +95,7 @@
   overflow: hidden;
 }
 @media (min-width: 1200px) {
-  .SlideContainer h2 {
+  .slideWrapper h2 {
       margin-left: 20px;
       margin-right: 20px;
       font-size: 20px;
@@ -103,7 +103,7 @@
   }
 }
 
-.SlideContainer h3  {
+.slideWrapper h3  {
   font-size: 13px;
   margin-top : 6px;
   font-weight: 500;
@@ -117,7 +117,7 @@
 
 
 @media (min-width: 1200px) {
-  .SlideContainer h3 {
+  .slideWrapper h3 {
       margin: 0 20px;
       height: 44px;
       font-size: 14px;

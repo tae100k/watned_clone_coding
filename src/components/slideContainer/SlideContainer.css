@@ -9,7 +9,7 @@
 
 
 @media (min-width: 1200px) {
-  .TopBanner {
+  .topBanner {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@
 }
 }
 
-.TopBanner {
+.topBanner {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@
 }
 
 
-.StyledSlider {
+.slickListWrapper {
   direction: ltr;
   unicode-bidi: isolate;
   margin: 0;
@@ -43,7 +43,7 @@
 }
 
  @media (min-width: 1200px) {
-  .SlickList{ 
+  .slickList{ 
     box-sizing: border-box;
     border: 0;
     position: relative;
@@ -53,7 +53,7 @@
   }
 }
 
-.SlickList{ 
+.slickList{ 
   box-sizing: border-box;
   border: 0;
   position: relative;
@@ -65,7 +65,7 @@
   
 
 /* 수정 예정 */
-.SlickTrack {
+.slickTrack {
   opacity: 1;
   width: 46827px;
   box-sizing: border-box;
