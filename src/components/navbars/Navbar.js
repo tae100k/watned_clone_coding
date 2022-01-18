@@ -12,7 +12,7 @@ function Navbar() {
                 height:"14px", objectFit: "contain"}}></img>
             </button>
             <a href="/" className="mainBarLogo">
-              <i className="iconLogoNew">wanted</i>
+             <img src="https://www.wantedlab.com/img/logo.png" alt="wanted logo" className="logoImg" />
             </a>
             </div>
           <button id="gnbSignupBtn" className="xsSignUpButton">회원가입하기 </button>
@@ -144,7 +144,20 @@ function Navbar() {
             </li>
             <li className="AsideMenu">
               <button type="menu" className="menuButton">
-                <img src="/icons/ellipses.png" alt="ellipses" className=" ellipsesButton"></img>
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" className="dot">
+                  <defs>
+                    <path d="M9 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 9 7.5zm5.05 0a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 14.05 7.5zM4 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 4 7.5z" id="a"></path>
+                  </defs>
+                  <g fill="none" fillRule="evenodd">
+                    <mask id="b" fill="#fff">
+                      <use href="#a"></use>
+                    </mask>
+                    <use fill="#333" href="#a"></use>
+                    <g mask="url(#b)" fill="#333">
+                      <path d="M0 0h18v18H0z"></path>
+                    </g>
+                  </g>
+                </svg>
               </button>
             </li>
           </ul>

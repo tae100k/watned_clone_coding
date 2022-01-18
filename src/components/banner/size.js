@@ -30,7 +30,7 @@ export const StyledSlide = styled.div`
 
 export const ImageContainer = styled.div`
   transition: filter 0.4s ease-in-out 0s;
-  filter: ${(props) => (props.focused ? 'brightness(100%)' : 'brightness(50%)')};
+  filter: ${(props) => (props.isCurrent ? 'brightness(100%)' : 'brightness(50%)')};
   @media (min-width: 992px) and (max-width: 1199px) {
     user-select: none;
     box-sizing: border-box;
@@ -69,7 +69,7 @@ export const Information = styled.div`
     border-radius: 4px;
     background-color: #fff;
     transition: opacity 0.4s ease-in-out;
-    opacity: ${(props) => (props.focused ? '1' : '0')};
+    opacity: ${(props) => (props.isCurrent ? '1' : '0')};
     text-align: left;
     left: 34px;
   }

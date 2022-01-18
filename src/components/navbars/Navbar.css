@@ -153,6 +153,12 @@ flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.logoImg {
+    height: 17px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
 /*왼쪽 mainBarNavTop*/
 @media (max-width: 767px){
 .mainBarNavTop {
@@ -162,16 +168,30 @@ flex-wrap: wrap;
 }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .mainBarNavTop {
+        height: 60px;
+        width: 100%;
+        padding: 15px 20px;
+    } 
+}
+
 @media (min-width: 768px) and (max-width: 991px){
-.mainBarNavTop {
-    height: 60px;
-    width: 100%;
-    padding: 15px 20px;
-}}
-@media (min-width: 768px) and (max-width: 991px){
-.mainBarNavTop {
-    padding: 15px 0;
-}}
+    .mainBarNavTop {
+        padding: 15px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -224,7 +244,7 @@ padding: 0 14px;
 
 
 /*mainBarHanburger*/
-.mainBarHamburger, .mainBarNavTop {
+.mainBarHamburger {
 margin-top: -2px;
 margin-right: 15px;
 }
