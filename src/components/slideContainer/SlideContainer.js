@@ -1,6 +1,5 @@
 import React, {  useRef, useEffect, useCallback, useState } from 'react';
 import { throttle } from 'lodash';
-
 import Banner from "../banner/Banner"
 import "./SlideContainer.css"
 import slideItems from "../constants/slideItems";
@@ -11,7 +10,7 @@ let slideStart = 6336.5;
 function SlideContainer() {
   const slideRef = useRef(null); //애니메이션 받는 슬라이드
   const [counter, setCounter] = useState(Math.floor(Math.random() * 10)); 
-  const [slidesize, setSlideSize] = useState(1084); 
+  const [slidesize, setSlideSize] = useState(1084);
 
   const styleAnimation = () => {
     slideRef.current.style.transition = `transform 400ms ease 0s`;
@@ -20,6 +19,8 @@ function SlideContainer() {
   const styleNoAnimation = () => {
     slideRef.current.style.transition = '';
   };
+
+
 
   const swipeRight = useCallback(() => {
     if (counter >= length) {
@@ -48,28 +49,43 @@ function SlideContainer() {
     [slidesize],
   );
 
-  
-  const handleResize = throttle(() => {
-    const windowWidth = window.innerWidth;
-    const frontSlideNum = Math.floor(length / 2);
 
-    if (windowWidth > 1200) {
-      slideStart = (3 * slide_width - windowWidth) / 2 + 50 + slide_width * frontSlideNum;
-      setSlideSize(slide_width);
-      return;
-    }
-    slideStart =
-      (3 * (windowWidth - 97) - windowWidth) / 2 + 40 + (windowWidth - 97) * frontSlideNum;
-    setSlideSize(windowWidth - 97);
-  }, 200);
+const handleResize = throttle(() => {
+  if (window.innerWidth > 1200) {
+  slideStart = (3 * slide_width - window.innerWidth) / 2 + 50 + slide_width * (Math.floor(length / 2));
+  setSlideSize(slide_width);
+  return;
+  }
+  slideStart =
+      (3 * (window.innerWidth - 97) - window.innerWidth) / 2 + 40 + (window.innerWidth - 97) * (Math.floor(length / 2));
+    setSlideSize(window.innerWidth - 97);
+
+} ,200);
+
+useEffect(() => {
+  handleResize();
+  window.addEventListener('resize', handleResize);
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, [handleResize]);
+
+
+
+
 
   useEffect(() => {
-    handleResize();
+    handleResize()
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, [handleResize]);
+
+
+
+
+
 
   useEffect(() => {
     styleTranslate(counter);
@@ -84,9 +100,15 @@ function SlideContainer() {
         slideRef.current.ontransitionend = null;
       };
     }
-
   }, [styleTranslate, swipeRight, swipeLeft, counter]);
-  // SlideTrack, Slides에 임시로 windowSize 부여
+
+
+
+
+
+
+
+
   return (
     <div className = "Main">
       <div className ="topBanner">

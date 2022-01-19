@@ -37,10 +37,10 @@ function Navbar() {
                   >
                     <g
                       fill="none"
-                      fill-rule="evenodd"
-                      font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo"
-                      font-size="9"
-                      font-weight="500"
+                      fillRule="evenodd"
+                      fontFamily="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo"
+                      fontSize="9"
+                      fontWeight="500"
                     >
                       <g fill="#3366FF">
                         <g fill="#3366FF">
@@ -83,10 +83,10 @@ function Navbar() {
                   >
                     <g
                       fill="none"
-                      fill-rule="evenodd"
-                      font-family="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo"
-                      font-size="9"
-                      font-weight="500"
+                      fillRule="evenodd"
+                      fontFamily="AppleSDGothicNeo-SemiBold, Apple SD Gothic Neo"
+                      fontSize="9"
+                      fontWeight="500"
                     >
                       <g fill="#3366FF">
                         <g fill="#3366FF">
